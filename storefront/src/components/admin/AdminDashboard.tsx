@@ -57,6 +57,7 @@ export const AdminDashboard: React.FC = () => {
     { id: 'payments', label: 'UAE Payment & Bank IBAN', icon: <CreditCard size={17} /> },
     { id: 'amazon', label: 'Amazon.ae & MCF Logistics', icon: <Truck size={17} /> },
     { id: 'odoo', label: 'Odoo 18 ERP Connector', icon: <Database size={17} /> },
+    { id: 'slack', label: 'Slack Notifications', icon: <Slack size={17} /> },
   ];
 
   return (
@@ -168,6 +169,7 @@ export const AdminDashboard: React.FC = () => {
         {activeTab === 'payments' && <PaymentsTab />}
         {activeTab === 'amazon' && <AmazonTab />}
         {activeTab === 'odoo' && <OdooTab />}
+        {activeTab === 'slack' && <SlackTab />}
       </div>
     </div>
   );
