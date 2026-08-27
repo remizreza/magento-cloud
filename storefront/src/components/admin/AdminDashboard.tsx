@@ -16,6 +16,7 @@ import {
   Sparkles,
   TrendingUp,
   AlertCircle,
+  Slack,
 } from 'lucide-react';
 import { useStore } from '../../context/StoreContext';
 import { useCurrency } from '../../context/CurrencyContext';
@@ -27,8 +28,9 @@ import { AmazonTab } from './AmazonTab';
 import { OdooTab } from './OdooTab';
 import { PaymentsTab } from './PaymentsTab';
 import { OrdersTab } from './OrdersTab';
+import { SlackTab } from './SlackTab';
 
-type AdminTab = 'store' | 'products' | 'inventory' | 'currency' | 'amazon' | 'odoo' | 'payments' | 'orders';
+type AdminTab = 'store' | 'products' | 'inventory' | 'currency' | 'amazon' | 'odoo' | 'payments' | 'orders' | 'slack';
 
 export const AdminDashboard: React.FC = () => {
   const searchParams = useSearchParams();

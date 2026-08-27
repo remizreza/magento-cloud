@@ -1,1 +1,8 @@
 .vercel
+
+# local env files (never commit secrets)
+.env
+.env*.local
+.env.development.local
+.env.production.local
+.env.test.local
